@@ -1,2 +1,2 @@
-def navigate_to(context, address):
-    context.webdriver.get(address)
+def navigate_to(webdriver, address):
+    webdriver.get(address)

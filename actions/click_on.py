@@ -1,2 +1,2 @@
-def click_on(context, element):
-    context.webdriver.find_element(*element).click()
+def click_on(webdriver, element):
+    webdriver.find_element(*element).click()
