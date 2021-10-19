@@ -2,10 +2,8 @@ from pytest import fixture
 from selenium import webdriver
 from pytest_bdd import scenarios, given, when, then
 from pages.homepage import Homepage
-from actions.navigate_to import navigate_to
-from actions.click_on import click_on
 from actions.check_if_exists import check_if_exists
-from sys import argv
+from tasks.load_google_home_page import load_google_home_page
 
 scenarios('../../features/homepage.feature')
 
@@ -19,8 +17,8 @@ def browser():
 
 @given('the Google home page is loaded')
 def google_home(browser):
-    navigate_to(browser, Homepage.url)
-    #click_on(browser, Homepage.close_pop_up_button)
+    load_google_home_page(browser)
+
 
 
 @then('there is an option to sign in')
