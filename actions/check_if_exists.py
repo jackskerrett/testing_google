@@ -1,2 +1,8 @@
+from selenium.common.exceptions import NoSuchElementException       
+
 def check_if_exists(webdriver, element):
-    return webdriver.find_element(*element)
+    try:
+        webdriver.find_element(*element)
+    except NoSuchElementException:
+        return False
+    return True

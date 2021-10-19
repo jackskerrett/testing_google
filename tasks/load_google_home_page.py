@@ -6,5 +6,5 @@ from pages.homepage import Homepage
 
 def load_google_home_page(browser):
     navigate_to(browser, Homepage.url)
-    if(check_if_exists(browser, Homepage.pop_up_on_initial_load) != None):
+    if(check_if_exists(browser, Homepage.pop_up_on_initial_load)):
         click_on(browser, Homepage.close_pop_up_button)

@@ -23,4 +23,4 @@ def google_home(browser):
 
 @then('there is an option to sign in')
 def check_login_option(browser):
-    assert(check_if_exists(browser, Homepage.sign_in_button) != None)
+    assert(check_if_exists(browser, Homepage.sign_in_button))
