@@ -20,7 +20,7 @@ def browser():
 @given('the Google home page is loaded')
 def google_home(browser):
     navigate_to(browser, Homepage.url)
-    click_on(browser, Homepage.close_pop_up_button)
+    #click_on(browser, Homepage.close_pop_up_button)
 
 
 @then('there is an option to sign in')
