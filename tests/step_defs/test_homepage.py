@@ -5,12 +5,15 @@ from pages.homepage import Homepage
 from actions.navigate_to import navigate_to
 from actions.click_on import click_on
 from actions.check_if_exists import check_if_exists
+from sys import argv
 
 scenarios('../../features/homepage.feature')
 
 @fixture
 def browser():
-    b = webdriver.Firefox()
+    browser_options = webdriver.FirefoxOptions()
+    browser_options.headless = True
+    b = webdriver.Firefox(options = browser_options)
     yield b
     b.quit()
 
