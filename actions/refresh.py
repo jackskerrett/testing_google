@@ -1,2 +1,2 @@
-def refresh(webdriver):
-    webdriver.refresh()
+def refresh(context):
+    context.webdriver.refresh()
