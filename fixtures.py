@@ -9,7 +9,7 @@ class Context:
 def default_browser():
     context = Context()
     browser_options = webdriver.FirefoxOptions()
-    browser_options.headless = False
+    browser_options.headless = True
     context.webdriver = webdriver.Firefox(options = browser_options)
     context.actor = DefaultUser
     yield context

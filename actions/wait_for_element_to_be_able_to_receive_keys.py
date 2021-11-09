@@ -1,5 +1,6 @@
 from selenium.common.exceptions import ElementNotInteractableException
 
+
 def wait_for_element_to_be_able_to_receive_keys(context, element):
     while(1):
         try:

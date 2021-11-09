@@ -1,5 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 
+
 def wait_for_element_to_load(context, element):
     while(1):
         try:
@@ -7,4 +8,3 @@ def wait_for_element_to_load(context, element):
             break
         except NoSuchElementException:
             continue
-    

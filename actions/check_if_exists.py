@@ -1,4 +1,5 @@
-from selenium.common.exceptions import NoSuchElementException       
+from selenium.common.exceptions import NoSuchElementException
+
 
 def check_if_exists(context, element):
     try:
