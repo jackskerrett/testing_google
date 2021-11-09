@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class SignIn:
     email_input_box = (By.ID, "identifierId")
     email_page_next_button = (By.XPATH, '//*[@id="identifierNext"]/div/button')
