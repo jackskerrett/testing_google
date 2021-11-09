@@ -10,7 +10,6 @@ scenarios('../../features/login.feature')
 
 @given('the Google homepage is displayed')
 def the_google_homepage_is_displayed(default_browser):
-    print("this is the start of the login test")
     load_google_home_page(default_browser)
 
 
@@ -30,6 +29,5 @@ def the_Google_homepage_is_displayed(default_browser):
 
 @then('an icon in the top right displays the logged in user')
 def an_icon_in_the_top_right_displays_the_logged_in_user(default_browser):
-    print("this is the end of the login test")
     assert(get_logged_in_user(default_browser).split("(")[1].replace(")", "") == default_browser.actor.email_address)
 

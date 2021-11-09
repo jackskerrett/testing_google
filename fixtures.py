@@ -7,7 +7,6 @@ class Context:
 
 @fixture
 def default_browser():
-    print("I AM A FIXTURE")
     context = Context()
     browser_options = webdriver.FirefoxOptions()
     browser_options.headless = True
